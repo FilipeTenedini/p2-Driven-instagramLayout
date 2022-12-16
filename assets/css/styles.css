@@ -8,11 +8,11 @@ body{
 header{
     width: 100vw;
     position: fixed;
-    background-color: green;
     display: flex;
     justify-content: center;
     height: 54px;
     top: 0;
+    z-index: 1;
 }
 .container{
     width: 935px;
@@ -21,7 +21,7 @@ header{
 header .container{
     justify-content: space-between;
     align-items: center;
-    background-color: pink;
+    background-color: green;
 }
 ion-icon{
     font-size: 24px;
@@ -53,6 +53,9 @@ header input{
 }
 input::placeholder{
     text-align: center;
+    color: #979797;
+    font-weight: 400;
+    font-size: 12px;
 }
 .icons ion-icon{
     margin-right: 25px;
@@ -66,25 +69,29 @@ input::placeholder{
 main{
     width: 614px;
     height: 300px;
-    background-color: red;
+    margin-right: 21px;
 }
 .storys{
+    background-color: #FFF;
     height: 118px;
     width: 100%;
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
     margin-bottom: 24px;
-    background-color: green;
 }
 
 .content{
     width: 100%;
-    background-color: black;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 .post{
+    background-color: #FFF;
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
     width: 100%;
-    background-color: darkblue;
+    margin-bottom: 60px;
 }
 .post-head{
     height: 60px;
@@ -92,7 +99,6 @@ main{
     justify-content: space-between;
     align-items: center;
     color: #000;
-    background-color: white;
 }
 .post-user{
     display: flex;
@@ -114,6 +120,9 @@ main{
     margin-right: 15px;
     cursor: pointer;
 }
+.post-options ion-icon{
+    font-size: 16px;
+}
 .post-img{
     width: 100%;
     height: 612px;
@@ -130,11 +139,9 @@ main{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    background-color: white;
     height: 76px;
 }
 .post-icons{
-    background-color: blue;
     display: flex;
     align-items: center;
     width: 100%;
@@ -145,15 +152,31 @@ main{
 }
 .post-icons ion-icon:first-child{
     margin-left: 17px;
-    background-color: green;
 }
 .post-icons ion-icon:last-child{
-    background-color: red;
     position: absolute;
     right: 17px;
 }
-
-
+.post-likes{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.post-likes img{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-left: 17px;
+    cursor: pointer;
+}
+.likes-text{
+    margin-left: 5px;
+    color: #000;
+}
+.likes-text span{
+    font-weight: 500;
+    cursor: pointer;
+}
 
 
 aside{
