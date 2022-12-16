@@ -1,6 +1,9 @@
 body{
     color: #FAFAFA;
     font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 header{
     width: 100vw;
@@ -20,7 +23,7 @@ header .container{
     align-items: center;
     background-color: pink;
 }
-header ion-icon{
+ion-icon{
     font-size: 24px;
     cursor: pointer;
     color: #000;
@@ -49,13 +52,13 @@ header input{
     border: 1px solid #DBDBDB;
 }
 input::placeholder{
-    padding-left: 68px;
+    text-align: center;
 }
 .icons ion-icon{
     margin-right: 25px;
 }
 .container.main{
-    margin: 80px auto;
+    margin-top: 80px;
 }
 
 
@@ -74,19 +77,86 @@ main{
 
 .content{
     width: 100%;
-    height: 120px;
     background-color: black;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-
+.post{
+    width: 100%;
+    background-color: darkblue;
+}
+.post-head{
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #000;
+    background-color: white;
+}
+.post-user{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.post-user img{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-left: 15px;
+}
+.post-user--name{
+    margin-left: 15px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.post-options{
+    margin-right: 15px;
+    cursor: pointer;
+}
+.post-img{
+    width: 100%;
+    height: 612px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.post-img img{
+    width: 100%;
+    height: 100%;
+}
+.post-tail{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    height: 76px;
+}
+.post-icons{
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+.post-icons ion-icon{
+    margin-right: 17px;
+}
+.post-icons ion-icon:first-child{
+    margin-left: 17px;
+    background-color: green;
+}
+.post-icons ion-icon:last-child{
+    background-color: red;
+    position: absolute;
+    right: 17px;
+}
 
 
 
 
 aside{
-    flex: 1;
     background-color: blue;
-    height: 300px;
+    flex: 1;
 }
