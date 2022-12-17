@@ -41,13 +41,14 @@ header .logo{
 }
 .logo ion-icon{
     border-right: 1px solid #DBDBDB;
-    padding-right: 10px;
+    /* padding-right: 10px; */
 }
 header input{
     width: 215px;
     height: 28px;
     border-radius: 3px;
     outline: none;
+    color: #979797;
     background-color: #FAFAFA;
     border: 1px solid #DBDBDB;
 }
@@ -78,7 +79,59 @@ main{
     border: 1px solid #DBDBDB;
     border-radius: 3px;
     margin-bottom: 24px;
+    display: flex;
+    overflow: hidden;
+    position: relative;
 }
+.storys-slider{
+    width: 1400px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    /* background-color: red; */
+}
+.storys-slider .story-user:first-child{
+    margin-left: 17px;
+}
+.story-user{
+    width: 66px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 17px;
+    cursor: pointer;
+}
+.story-user--img{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 6px;
+}
+.story-user--img .border{
+    width: 66px;
+    height: 66px;
+}
+.story-user--img .story-perfil{
+    width: 56px;
+    height: 56px;
+    position: absolute;
+    margin: auto;
+    border-radius: 50%;
+    top: 5px;
+    left: 5px;
+}
+.story-user--name{
+    width: 100%;
+}
+.story-user--name p{
+    font-size: 12px;
+    color: #262626;
+    text-align: center;
+}
+
+
+
 
 .content{
     width: 100%;
@@ -110,11 +163,13 @@ main{
     height: 32px;
     border-radius: 50%;
     margin-left: 15px;
+    cursor: pointer;
 }
 .post-user--name{
     margin-left: 15px;
     font-size: 14px;
     font-weight: 500;
+    cursor: pointer;
 }
 .post-options{
     margin-right: 15px;
@@ -180,6 +235,38 @@ main{
 
 
 aside{
-    background-color: blue;
+    width: 293px;
+    margin-left: 643px;
+    position: fixed;
+    right: 10;
     flex: 1;
+}
+.logged-area{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.logged-area--user{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 118px;
+}
+.logged-area--user img{
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    margin-right: 17px;
+}
+.logged-user-nick{
+    color: #262626;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+}
+.logged-user--name{
+    font-size: 14px;
+    font-weight: 300;
+    color: #8E8E8E;
+    line-height: 16px;
 }
