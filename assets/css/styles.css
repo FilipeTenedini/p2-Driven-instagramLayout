@@ -1,5 +1,8 @@
+*{
+    border: 1px solid red;
+}
 body{
-    color: #FAFAFA;
+    background-color: #FAFAFA;
     font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: column;
@@ -13,15 +16,18 @@ header{
     height: 54px;
     top: 0;
     z-index: 1;
+    background-color: #FFF;
 }
 .container{
     width: 935px;
     display: flex;
 }
+.container.mobile{
+    display: none;
+}
 header .container{
     justify-content: space-between;
     align-items: center;
-    background-color: green;
 }
 ion-icon{
     font-size: 24px;
@@ -36,12 +42,13 @@ header .logo{
 .logo img{
     width: 103px;
     height: 29px;
-    margin-left: 10px;
     cursor: pointer;
 }
-.logo ion-icon{
-    border-right: 1px solid #DBDBDB;
-    /* padding-right: 10px; */
+.logo div{
+    width: 1px;
+    height: 25px;
+    margin: 0 10px;
+    background-color: #DBDBDB;
 }
 header input{
     width: 215px;
@@ -61,15 +68,18 @@ input::placeholder{
 .icons ion-icon{
     margin-right: 25px;
 }
+.icons ion-icon:last-child{
+    margin-right: 0;
+}
 .container.main{
     margin-top: 80px;
+    /* background-color: blue; */
 }
 
 
 
 main{
     width: 614px;
-    height: 300px;
     margin-right: 21px;
 }
 .storys{
@@ -83,22 +93,30 @@ main{
     overflow: hidden;
     position: relative;
 }
+.storys ion-icon{
+    color: #fff;
+    font-size: 28px;
+    position: absolute;
+    z-index: 99;
+    right: 8px;
+    top: 46px;
+    border-radius: 50%;
+}
 .storys-slider{
     width: 1400px;
     height: 100%;
     display: flex;
     align-items: center;
-    /* background-color: red; */
 }
 .storys-slider .story-user:first-child{
-    margin-left: 17px;
+    margin-left: 15px;
 }
 .story-user{
-    width: 66px;
+    width: 64px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-right: 17px;
+    margin-right: 16px;
     cursor: pointer;
 }
 .story-user--img{
@@ -119,7 +137,7 @@ main{
     margin: auto;
     border-radius: 50%;
     top: 5px;
-    left: 5px;
+    left: 4px;
 }
 .story-user--name{
     width: 100%;
@@ -128,6 +146,8 @@ main{
     font-size: 12px;
     color: #262626;
     text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 
@@ -177,6 +197,10 @@ main{
 }
 .post-options ion-icon{
     font-size: 16px;
+}
+.liked{
+    font-size: 26px;
+    color: red;
 }
 .post-img{
     width: 100%;
@@ -250,8 +274,9 @@ aside{
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    height: 118px;
+    height: 100px;
 }
+
 .logged-area--user img{
     width: 56px;
     height: 56px;
@@ -269,4 +294,167 @@ aside{
     font-weight: 300;
     color: #8E8E8E;
     line-height: 16px;
+}
+.logged-area--suggestion{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.suggestion-head{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 18px;
+}
+.suggestion-head p:first-child{
+    font-size: 12px;
+    font-weight: 500;
+    color: #8E8E8E;
+}
+.suggestion-head p:last-child{
+    font-size: 12px;
+    font-weight: 500;
+    color: #262626;
+    cursor: pointer;
+}
+.suggestions{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.suggestion-user{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+.suggestion-user--info{
+    display: flex;
+}
+.suggestion-user--info img{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 11px;
+    cursor: pointer;
+}
+.suggestion-user--perfil{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.suggestion-user--nick{
+    color: #262626;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.suggestion-user--name{
+    color: #8E8E8E;
+    font-size: 12px;
+    font-weight: 400;
+}
+.follow{
+    color: #139EF2;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.logged-area--tail{
+    display: flex;
+    flex-direction: column  ;
+}
+.logged-area--tailnav{
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 18px;
+}
+.logged-area--tail a{
+    text-decoration: none;
+}
+.logged-area--tail p{
+    font-size: 11px;
+    margin-right: 3px;
+    color: #c7c7c7;
+}
+.logged-area--tailnav p:hover{
+    text-decoration: underline;
+}
+
+footer{
+    display: none;
+    background-color: #FFF;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+footer div{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 20px 20px;
+}
+@media (max-width: 935px){
+    .container.desktop,
+    .container.main{
+        width: 100%;
+    }
+    aside{
+        display: none;
+    }
+    .container.main{
+        justify-content: center;
+    }
+    .post-user{
+        max-width: 614px;
+    }
+}
+
+@media (max-width: 615px){
+    main{
+        width: 100%;
+        margin: 0;
+    }
+    .container.desktop{
+        display: none;
+    }
+    .container.mobile{
+        display: flex;
+    }
+    .container.mobile .logo{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .logo ion-icon:first-child{
+        margin-left: 21px;
+    }
+    .logo img{
+        width: 103px;
+        height: 29px;
+    }
+    .logo ion-icon:last-child{
+        margin-right: 21px;
+    }
+    .container.main{
+        margin-top: 54px;
+    }
+    .storys{
+        background-color: transparent;
+        height: 118px;
+        width: 100%;
+        border-bottom: 0px;
+        border-left: 0;
+        border-right: 0;
+        margin-bottom: 0;
+    }
+    .post{
+        border-left: 0;
+        border-right: 0;
+    }
+    footer{
+        display: flex;
+    }
 }
