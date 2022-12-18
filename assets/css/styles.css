@@ -1,12 +1,7 @@
-*{
-    border: 1px solid red;
-}
+
 body{
     background-color: #FAFAFA;
     font-family: 'Roboto', sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 header{
     width: 100vw;
@@ -21,6 +16,7 @@ header{
 .container{
     width: 935px;
     display: flex;
+    margin: auto;
 }
 .container.mobile{
     display: none;
@@ -208,23 +204,30 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 .post-img img{
     width: 100%;
     height: 100%;
-}
+    }
+video{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+} 
 .post-tail{
     display: flex;
+    width: 100%;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 76px;
 }
 .post-icons{
     display: flex;
     align-items: center;
     width: 100%;
     position: relative;
+    margin: 12px 0;
 }
 .post-icons ion-icon{
     margin-right: 17px;
@@ -240,6 +243,7 @@ main{
     display: flex;
     align-items: center;
     width: 100%;
+    margin-bottom: 12px;
 }
 .post-likes img{
     width: 20px;
@@ -256,6 +260,108 @@ main{
     font-weight: 500;
     cursor: pointer;
 }
+.post-legend{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 12px;
+}
+.comment-names{
+    font-size: 14px;
+    font-weight: bold;
+    margin-left:17px;
+    margin-right: 8px;
+}
+.post-legend p,
+.comment-msg{
+    font-size: 14px;
+}
+.comments{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.all-comments{
+    padding-left: 17px;
+    margin-bottom: 10px;
+    color: #8E8E8E;
+}
+.top-comments{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.comment{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 10px;
+}
+.comment p{
+    /* text-align: center; */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.comment p span{
+    color: #B1BEC6;
+}
+.comment-like{
+    position: absolute;
+    right: 36px;
+}
+.comment-like ion-icon{
+    font-size: 16px;
+}
+.comment-input{
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+.comment-input ion-icon, .comment-input button{
+    position: absolute;
+}
+.comment-input ion-icon{
+    cursor: context-menu;
+    left: 10px;
+}
+.comment-input button{
+    cursor: pointer;
+    right: 0;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    color: #B2DFFC;
+    transition: 0.3s;
+}
+.comment-input button:hover{
+    color: #0095F6;
+}
+.comment-input input{
+    width: 100%;
+    height: 22px;
+    padding: 5px 40px;
+    border-right: none;
+    border-left: none;
+    border-bottom: none;
+    border-top: 1px solid #DBDBDB;
+}
+.comment-input input::placeholder{
+    text-align: left;
+}
+.comment-input input:focus{
+    outline: none;
+}
+.comment-input ion-icon{
+    top: 4px;
+}
+.comment-input button{
+    top: 8px;
+}
+
+
 
 
 aside{
@@ -383,6 +489,8 @@ aside{
     text-decoration: underline;
 }
 
+
+
 footer{
     display: none;
     background-color: #FFF;
@@ -400,6 +508,9 @@ footer div{
     .container.desktop,
     .container.main{
         width: 100%;
+    }
+    .container.desktop{
+        margin: 0 20px;
     }
     aside{
         display: none;
@@ -456,5 +567,12 @@ footer div{
     }
     footer{
         display: flex;
+    }
+    .comment{
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .comment p{
+        width: 50%;
     }
 }
