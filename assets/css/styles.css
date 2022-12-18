@@ -565,8 +565,8 @@ footer div{
         border-left: 0;
         border-right: 0;
     }
-    footer{
-        display: flex;
+    .post-legend{
+        align-items: baseline;
     }
     .comment{
         overflow: hidden;
@@ -575,4 +575,8 @@ footer div{
     .comment p{
         width: 50%;
     }
+    footer{
+        display: flex;
+    }
+
 }
