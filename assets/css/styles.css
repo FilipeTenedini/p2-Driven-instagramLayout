@@ -69,7 +69,6 @@ input::placeholder{
 }
 .container.main{
     margin-top: 80px;
-    /* background-color: blue; */
 }
 
 
@@ -300,7 +299,6 @@ video{
     margin-bottom: 10px;
 }
 .comment p{
-    /* text-align: center; */
     overflow: hidden;
     text-overflow: ellipsis;
 }
@@ -366,7 +364,7 @@ video{
 
 aside{
     width: 293px;
-    margin-left: 643px;
+    transform: translateX(220%);
     position: fixed;
     background-color: #FAFAFA;
     flex: 1;
