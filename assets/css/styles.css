@@ -559,6 +559,9 @@ footer div{
         border-right: 0;
         margin-bottom: 0;
     }
+    .storys ion-icon{
+        display: none;
+    }
     .post{
         border-left: 0;
         border-right: 0;
