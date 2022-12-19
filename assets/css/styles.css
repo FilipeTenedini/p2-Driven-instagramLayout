@@ -368,7 +368,7 @@ aside{
     width: 293px;
     margin-left: 643px;
     position: fixed;
-    right: 10;
+    background-color: #FAFAFA;
     flex: 1;
 }
 .logged-area{
