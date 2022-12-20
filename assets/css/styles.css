@@ -367,7 +367,6 @@ aside{
     transform: translateX(220%);
     position: fixed;
     background-color: #FAFAFA;
-    flex: 1;
 }
 .logged-area{
     width: 100%;
