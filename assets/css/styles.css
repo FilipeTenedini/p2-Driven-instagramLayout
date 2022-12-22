@@ -19,9 +19,16 @@ header{
     display: flex;
     margin: auto;
 }
+.container.desktop{
+    height: 100%;
+}
 .container.mobile{
     display: none;
     margin: auto;
+    height: 100%;
+}
+.container.mobile .logo{
+    height: 100%;
 }
 header .container{
     justify-content: space-between;
