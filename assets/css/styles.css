@@ -597,3 +597,8 @@ footer div{
     }
 
 }
+@media (max-width: 476px){
+    .container.main{
+        margin-top: 22px;
+    }
+}
