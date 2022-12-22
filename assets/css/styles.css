@@ -11,7 +11,8 @@ header{
     height: 54px;
     top: 0;
     z-index: 1;
-    background-color: #FFF;
+    background-color: #fff;
+    border-bottom: 1px solid #DBDBDB;
 }
 .container{
     width: 935px;
@@ -20,6 +21,7 @@ header{
 }
 .container.mobile{
     display: none;
+    margin: auto;
 }
 header .container{
     justify-content: space-between;
@@ -97,8 +99,7 @@ main{
     top: 46px;
     border-radius: 50%;
 }
-.storys-slider{
-    width: 1400px;
+.storys-slider{      
     height: 100%;
     display: flex;
     align-items: center;
@@ -501,6 +502,9 @@ footer div{
     width: 100%;
     margin: 20px 20px;
 }
+
+
+
 @media (max-width: 935px){
     .container.desktop,
     .container.main{
@@ -547,19 +551,25 @@ footer div{
         margin-right: 21px;
     }
     .container.main{
-        margin-top: 54px;
+        margin-top: 46px;
     }
     .storys{
         background-color: transparent;
         height: 118px;
         width: 100%;
-        border-bottom: 0px;
-        border-left: 0;
-        border-right: 0;
+        border: 0;
         margin-bottom: 0;
+        overflow: scroll;
     }
+    .storys::-webkit-scrollbar {
+        display: none;
+      }
     .storys ion-icon{
         display: none;
+    }
+    .storys .storys-slider{
+        display: flex;
+        align-items: center;
     }
     .post{
         border-left: 0;
