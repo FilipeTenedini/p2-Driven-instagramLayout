@@ -27,9 +27,6 @@ header{
     margin: auto;
     height: 100%;
 }
-.container.mobile .logo{
-    height: 100%;
-}
 header .container{
     justify-content: space-between;
     align-items: center;
@@ -558,7 +555,7 @@ footer div{
         margin-right: 21px;
     }
     .container.main{
-        margin-top: 38px;
+        margin-top: 55px;
     }
     .storys{
         background-color: transparent;
@@ -596,9 +593,4 @@ footer div{
         display: flex;
     }
 
-}
-@media (max-width: 476px){
-    .container.main{
-        margin-top: 22px;
-    }
 }
