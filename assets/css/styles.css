@@ -88,22 +88,22 @@ main{
     margin-bottom: 24px;
     display: flex;
     overflow: hidden;
-    position: relative;
-}
-.storys ion-icon{
-    color: #fff;
-    font-size: 28px;
-    position: absolute;
-    z-index: 99;
-    right: 8px;
-    top: 46px;
-    border-radius: 50%;
 }
 .storys-slider{      
     height: 100%;
     display: flex;
     align-items: center;
+    position: relative;
 }
+.storys ion-icon{
+    color: #fff;
+    font-size: 28px;
+    transform: translate(575px, 40px);
+    position: absolute;
+    z-index: 99;
+    border-radius: 50%;
+}
+
 .storys-slider .story-user:first-child{
     margin-left: 15px;
 }
