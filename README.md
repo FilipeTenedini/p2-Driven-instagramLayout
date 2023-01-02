@@ -1,7 +1,7 @@
 # projeto2-instagram
 # 2° Projeto Driven Education Bootcamp
 ### Você pode acessar a aplicação neste link:
-  ### - <a href="https://filipetenedini.github.io/projeto2-instagram/">Segundo projeto</a>
+  ### - <a href="https://filipetenedini.github.io/projeto2-instagram/">Segundo projeto (Layout Instagram)</a>
 
 <p align="center">
   |&nbsp;&nbsp;&nbsp<a href="#Projeto">Projeto</a>&nbsp;&nbsp;
