@@ -6,7 +6,8 @@
 <p align="center">
   |&nbsp;&nbsp;&nbsp<a href="#Projeto">Projeto</a>&nbsp;&nbsp;
   |&nbsp;&nbsp;&nbsp<a href="#Tecnologias">Tecnologias</a>&nbsp;&nbsp;
-  |&nbsp;&nbsp;&nbsp<a href="#Aprendizados">Aprendizados</a>&nbsp;&nbsp;&nbsp;|&nbsp;
+  |&nbsp;&nbsp;&nbsp<a href="#Aprendizados">Aprendizados</a>&nbsp;&nbsp;&nbsp;&nbsp;
+  |&nbsp;&nbsp;&nbsp<a href="#avaliacao">Avaliação da Driven do meu Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;
 </p>
 
 <h1 id="Projeto"> 💻 Projeto</h1>
@@ -60,3 +61,9 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - Adicionar vídeo nas aplicações utilizando a tag video e o atributo controls
 - Responsividade
 - Posicionamento com position fixed, absolute e relative
+
+
+<h1 id="avaliacao">📚 Avaliação da Driven sobre meu projeto </h1>
+
+
+![image](https://user-images.githubusercontent.com/105571583/210285765-44827e1d-873b-4e05-9c41-1eab0d8f3a31.png)
