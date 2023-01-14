@@ -16,16 +16,22 @@
 
 <h3>- Requisitos passados </h3>
 
-
+<details>
+<summary>
 - Layout
+</summary>
 - [ ]  Aplicar layout para *desktop*, seguindo layout fornecido no Figma;
 - [ ]  Aplicar layout para *mobile*, seguindo layout fornecido no Figma;
 - [ ]  O layout sem *sidebar* deve ser ativado quando a largura da tela for menor que 935px;
 - [ ]  O layout para *mobil*e deve ser ativado quando a largura da tela for inferior a 614px;
 - [ ]  Não é obrigatório que a *sidebar* fique fixa conforme o usuário desce na página como ocorre no Instagram (mas é um bônus).
+</details>
 
-
+<details>
+<summary>
 - Ícones
+</summary>
+
 - [ ]  Utilize os ícones da biblioteca Ionicons;
 
 - Stories
@@ -33,10 +39,12 @@
 - [ ]  Deve haver, no modo *desktop*, uma setinha no canto direito dos *stories* (conforme mostrado no layout do Figma).
 - [ ]  A setinha não precisa funcionar ao clicar (só será possível quando vermos JavaScript).
 - [ ]  Não pode haver um *scroll* horizontal visível.
+</details>
 
-
-<h3>- Bônus (requisitos extras) </h3>
-
+<details>
+<summary>
+## Bônus (requisitos extras) 
+</summary>
 
 - [ ]  Pelo menos um dos posts deve ser um vídeo;
 - [ ]  Não é necessário ter o botão de play;
@@ -46,7 +54,7 @@
 - [ ]  Ter comentários nas postagens, com botão de *like* no canto direito em cada comentário;
 - [ ]  Uma caixa para digitar o comentário, utilizando a tag `input`;
 - [ ]  Um botão ao lado desta caixa para **Publicar**, com cor `#B2DFFC` inicialmente e, ao passar o mouse, fique com a cor `#0095F6` com uma transição que dura `300ms`. Procure pela propriedade *transition* para fazer isso :)
-
+</details>
 
 <h1 id="Tecnologias">🚀 Tecnologias</h1>
 
