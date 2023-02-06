@@ -1,7 +1,10 @@
 # 2° Projeto Driven Education Bootcamp
 ### Você pode acessar a aplicação neste link:
   ### - <a href="https://filipetenedini.github.io/p2-Driven-instagramLayout/">Layout Instagram</a>
-
+  ### - <a href="https://www.figma.com/file/rrweaBwWqOc9pAzk288mKB/Projeto-Instagram?node-id=0%3A1"> Figma </a>
+  
+  <br><br>
+  
 <p align="center">
   |&nbsp;&nbsp;&nbsp<a href="#Projeto">Projeto</a>&nbsp;&nbsp;
   |&nbsp;&nbsp;&nbsp<a href="#Tecnologias">Tecnologias</a>&nbsp;&nbsp;
